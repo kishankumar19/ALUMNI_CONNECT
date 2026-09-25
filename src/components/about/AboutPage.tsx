@@ -99,7 +99,7 @@ export const AboutPage: React.FC = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 py-8 sm:py-14 font-sans transition-colors duration-200">
+    <div className="w-full min-h-screen bg-transparent text-slate-900 dark:text-slate-100 py-8 sm:py-14 font-sans transition-colors duration-200 relative z-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
         {/* Back Button Navigation */}

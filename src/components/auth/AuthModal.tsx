@@ -60,7 +60,7 @@ export const AuthModal: React.FC = () => {
       return;
     }
     // Authenticate with actual user email and load their registered profile
-    loginUser('student', email.trim());
+    loginUser('student', email.trim(), undefined, undefined, password);
     setAuthModalOpen(false);
     resetForm();
   };
@@ -72,7 +72,7 @@ export const AuthModal: React.FC = () => {
       return;
     }
     // Authenticate with actual user email and load their registered profile
-    loginUser('alumni', email.trim());
+    loginUser('alumni', email.trim(), undefined, undefined, password);
     setAuthModalOpen(false);
     resetForm();
   };

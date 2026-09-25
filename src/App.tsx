@@ -29,7 +29,15 @@ const MainAppContent: React.FC = () => {
   const { currentView } = useApp();
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#F8F9FA] dark:bg-[#090D16] text-[#0F172A] dark:text-[#F8FAFC] relative pb-20 sm:pb-24 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-gradient-pink-yellow-blue-green text-[#0F172A] dark:text-[#F8FAFC] relative pb-20 sm:pb-24 transition-colors duration-300 overflow-x-hidden">
+      {/* Pink, Yellow, Blue, Green Ambient Glowing Blobs Overlay */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0 opacity-70 dark:opacity-40">
+        <div className="absolute top-[-5%] left-[-5%] w-[45vw] h-[45vw] min-w-[300px] min-h-[300px] rounded-full bg-pink-400/40 dark:bg-pink-600/30 blur-[100px] animate-pulse"></div>
+        <div className="absolute top-[0%] right-[-5%] w-[45vw] h-[45vw] min-w-[300px] min-h-[300px] rounded-full bg-yellow-300/50 dark:bg-amber-400/25 blur-[100px] animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-[-5%] right-[-5%] w-[45vw] h-[45vw] min-w-[300px] min-h-[300px] rounded-full bg-sky-400/40 dark:bg-blue-600/30 blur-[100px] animate-pulse" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute bottom-[-5%] left-[-5%] w-[45vw] h-[45vw] min-w-[300px] min-h-[300px] rounded-full bg-emerald-400/40 dark:bg-green-600/30 blur-[100px] animate-pulse" style={{ animationDelay: '3s' }}></div>
+      </div>
+
       {/* 1.5-2s Cinematic Opening Educational Sequence */}
       <IntroSequence />
 

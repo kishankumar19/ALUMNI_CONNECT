@@ -24,6 +24,43 @@
   }
 }
 
+/* Custom Vibrant & Soft Mixed Gradient Background (Pink, Yellow, Blue, Green) */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-pink-yellow-blue-green {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(244, 114, 182, 0.5) 0%, transparent 45%),   /* Pink glow */
+    radial-gradient(circle at 90% 20%, rgba(250, 204, 21, 0.5) 0%, transparent 45%),    /* Yellow glow */
+    radial-gradient(circle at 85% 85%, rgba(56, 189, 248, 0.5) 0%, transparent 45%),    /* Blue glow */
+    radial-gradient(circle at 15% 85%, rgba(74, 222, 128, 0.5) 0%, transparent 45%),    /* Green glow */
+    linear-gradient(135deg, #fbcfe8 0%, #fef08a 33%, #bae6fd 66%, #bbf7d0 100%);         /* Pink Yellow Blue Green base blend */
+  background-size: 200% 200%;
+  animation: gradientShift 14s ease-in-out infinite;
+  background-attachment: fixed;
+}
+
+.dark .bg-gradient-pink-yellow-blue-green {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(236, 72, 153, 0.35) 0%, transparent 45%),   /* Dark Pink glow */
+    radial-gradient(circle at 90% 20%, rgba(234, 179, 8, 0.3) 0%, transparent 45%),     /* Dark Yellow glow */
+    radial-gradient(circle at 85% 85%, rgba(14, 165, 233, 0.35) 0%, transparent 45%),   /* Dark Blue glow */
+    radial-gradient(circle at 15% 85%, rgba(34, 197, 94, 0.3) 0%, transparent 45%),     /* Dark Green glow */
+    linear-gradient(135deg, #3b0764 0%, #451a03 33%, #0369a1 66%, #064e3b 100%);         /* Deep Mixed Base */
+  background-size: 200% 200%;
+  animation: gradientShift 14s ease-in-out infinite;
+  background-attachment: fixed;
+}
+
 /* Glassmorphism helpers */
 .glass-obsidian {
   background: rgba(14, 16, 23, 0.75);

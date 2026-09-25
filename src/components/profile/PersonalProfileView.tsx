@@ -38,7 +38,7 @@ export const PersonalProfileView: React.FC = () => {
 
   if (!isAuthenticated) {
     return (
-      <div className="w-full min-h-[75vh] flex items-center justify-center bg-[#F8F9FA] dark:bg-[#090D16] py-12 px-4 transition-colors">
+      <div className="w-full min-h-[75vh] flex items-center justify-center bg-transparent py-12 px-4 transition-colors relative z-10">
         <div className="max-w-md w-full bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-8 shadow-sm text-center space-y-6">
           <div className="w-16 h-16 rounded-2xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-900 text-blue-600 dark:text-blue-400 flex items-center justify-center mx-auto shadow-sm">
             <Lock className="w-8 h-8" />
@@ -127,7 +127,7 @@ export const PersonalProfileView: React.FC = () => {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-[#F8F9FA] dark:bg-[#090D16] py-8 sm:py-12 transition-colors">
+    <div className="w-full min-h-screen bg-transparent py-8 sm:py-12 transition-colors relative z-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Navigation Breadcrumb & Actions */}
         <div className="flex items-center justify-between">

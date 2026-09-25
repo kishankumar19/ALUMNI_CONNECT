@@ -101,7 +101,7 @@ export const MentorshipHub: React.FC = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#F8F9FA] dark:bg-[#090D16] text-[#0F172A] dark:text-[#F8FAFC] py-8 sm:py-12 transition-colors duration-200">
+    <div className="w-full min-h-screen bg-transparent text-[#0F172A] dark:text-[#F8FAFC] py-8 sm:py-12 transition-colors duration-200 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         
         {/* Universal Back Button */}

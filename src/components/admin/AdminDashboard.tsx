@@ -54,7 +54,7 @@ export const AdminDashboard: React.FC = () => {
 
   if (!isAuthenticated || currentUser.role !== 'admin') {
     return (
-      <div className="w-full min-h-[75vh] flex items-center justify-center bg-[#F8F9FA] py-12 px-4">
+      <div className="w-full min-h-[75vh] flex items-center justify-center bg-transparent py-12 px-4 relative z-10">
         <div className="max-w-md w-full bg-white rounded-3xl border border-rose-200 p-8 shadow-card-soft text-center space-y-6">
           <div className="w-16 h-16 rounded-2xl bg-rose-50 border border-rose-200 text-rose-600 flex items-center justify-center mx-auto shadow-sm">
             <ShieldAlert className="w-8 h-8 text-rose-600" />
@@ -110,7 +110,7 @@ export const AdminDashboard: React.FC = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#F8F9FA] py-8 sm:py-12">
+    <div className="w-full min-h-screen bg-transparent py-8 sm:py-12 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
         {/* Top Header */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">

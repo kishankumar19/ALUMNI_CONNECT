@@ -170,12 +170,12 @@ export const LandingPage: React.FC = () => {
   });
 
   return (
-    <div className="w-full flex flex-col bg-[#F8F9FA] dark:bg-[#090D16] text-[#0F172A] dark:text-[#F8FAFC] font-sans transition-colors duration-200">
+    <div className="w-full flex flex-col bg-transparent text-[#0F172A] dark:text-[#F8FAFC] font-sans transition-colors duration-200 relative z-10">
       
       {/* ========================================================= */}
       {/* SECTION 7: MAIN HERO SECTION                              */}
       {/* ========================================================= */}
-      <section className="relative w-full pt-10 pb-16 sm:pt-16 sm:pb-24 px-4 sm:px-6 lg:px-8 border-b border-slate-200/80 dark:border-slate-800/80 overflow-hidden bg-gradient-to-b from-white via-slate-50 to-slate-100/60 dark:from-[#0B1120] dark:via-[#090D16] dark:to-[#070A10]">
+      <section className="relative w-full pt-10 pb-16 sm:pt-16 sm:pb-24 px-4 sm:px-6 lg:px-8 border-b border-slate-200/50 dark:border-slate-800/50 overflow-hidden bg-white/20 dark:bg-slate-950/20 backdrop-blur-xs">
         {/* Subtle Background Glows */}
         <div className="absolute inset-0 pointer-events-none opacity-40 dark:opacity-20">
           <div className="absolute -top-32 right-10 w-[500px] h-[500px] bg-blue-100 dark:bg-blue-900 rounded-full blur-3xl"></div>
